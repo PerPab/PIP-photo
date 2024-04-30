@@ -253,6 +253,53 @@ footer{
     background-color: #8B0000; /* Dark red color on click */
 }
 
+.barra{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 80%;
+    height: 80px;
+    background-color: transparent;
+    border-radius: 0%;
+    border: whitesmoke 8px solid;
+}
+
+.progreso{
+    width: 0%;
+    height: 80%;
+    background-color: whitesmoke;
+    padding: 1rem;
+    margin: 1rem;
+    animation: 4s progress-animation linear infinite;
+
+}
+
+.contenedor-barra{
+    width: 25rem;
+    margin: 0%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.texto-barra{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: whitesmoke;
+}
+
+@keyframes progress-animation {
+    0% {
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
 /* Animación para el efecto de parpadeo */
 @keyframes flicker {
     0% {

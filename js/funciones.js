@@ -44,7 +44,7 @@ function PantallaVacia() {
     return plantilla;
 }
 
-function conexionAPI() {
+/*function conexionAPI() {
     fetch(URLapi)
         .then((response) => response.json())
         .then((data) => ListaImagenes.push(...data))
@@ -57,7 +57,7 @@ function conexionAPI() {
             }
         })
 
-}
+}*/
 
 function QuitarFiltro() {
 
@@ -71,5 +71,26 @@ function QuitarFiltro() {
     document.getElementById('footer').classList.toggle('textura-fondo');
 }
 
-window.addEventListener('onload', conexionAPI());
+//window.addEventListener('onload', conexionAPI());
+
+function conexionAPI() {
+    fetch(URLapi)
+        .then((response) => response.json())
+        .then((data) => ListaImagenes.push(...data))
+        .then(() => {
+            if (ListaImagenes.length > 0) {
+                document.getElementById('contenedor-barra-id').style.display = 'none';
+                Renderizar();
+            }
+        });
+
+}
+
+
+
+
+window.addEventListener('onload', setTimeout(() => {
+    conexionAPI()
+}, 2000));
+
 
