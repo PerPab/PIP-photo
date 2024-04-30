@@ -38,14 +38,12 @@ if (btnCapturar != null) {
     })
 }
 
-
 function EnviarDatos(objeto) {
     const opciones = {
         method: 'POST',
         headers: { "content-type": "application/json" },
         body: JSON.stringify(objeto)
     }
-
     fetch(URLapi, opciones)
         .then((response) => {
             if (response.status === 201) {

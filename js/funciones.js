@@ -40,7 +40,6 @@ function PantallaVacia() {
         <h5 class="text-sad">No hay fotos en la galería</h5>
     </div>
     `
-
     document.getElementById('lista').innerHTML = plantilla;
 }
 

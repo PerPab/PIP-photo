@@ -277,8 +277,8 @@ footer{
 
 .contenedor-barra{
     width: 25rem;
-    height: 80vh;
-    margin: 0%;
+    height: 50vh;
+    margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
@@ -318,10 +318,14 @@ footer{
 
 @media screen and (width <= 420px) {
     .titulo-pip{
-        
-        font-size: 2rem;
+        font-size: 1.5rem;
 }
 
+
+.contenedor-barra{
+    transform: scale(0.5);
+
+}
 
 }
 
