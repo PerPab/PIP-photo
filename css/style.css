@@ -344,6 +344,7 @@ footer{
 
     .contenedor-barra{
         transform: scale(0.7);
+        z-index: 1;
         
     }
 }
