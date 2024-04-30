@@ -343,7 +343,9 @@ footer{
     } 
 
     .contenedor-barra{
-        transform: scale(0.5);
+        transform: scale(0.7);
+        padding: 0;
+        margin: 0;
     }
 }
 
