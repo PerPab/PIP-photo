@@ -63,11 +63,11 @@ function conexionAPI() {
         .then((response) => response.json())
         .then((data) => ListaImagenes.push(...data))
         .then(() => {
+            document.getElementById('contenedor-barra-id').style.display = 'none';
             if (ListaImagenes.length > 0) {
-                document.getElementById('contenedor-barra-id').style.display = 'none';
                 Renderizar();
             } else {
-                document.getElementById('contenedor-barra-id').style.display = 'none';
+                //document.getElementById('contenedor-barra-id').style.display = 'none';
                 PantallaVacia();
             }
         });
