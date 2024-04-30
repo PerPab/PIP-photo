@@ -1,0 +1,305 @@
+@font-face {
+    font-family: Overseer;
+    src: url('../recursos/Overseer\ Bold\ Italic.otf')
+
+}
+html{
+    background-color: #20201E;
+}
+
+.contenedor-principal{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #20201E;
+}
+.titulo-pip{
+   font-family: 'Overseer';
+    font-size: 2.5rem;
+    color: goldenrod;
+    text-shadow:0px 1px 1px #000;
+       
+    
+}
+.card-img-top{
+    border-radius: 25px;
+    
+}
+
+.img-byn{
+    filter:  grayscale(1) contrast(100) brightness(1);
+    -webkit-filter: grayscale(100%);
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+.fecha-card{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 15px;
+}
+
+.titulo-card{
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.contenedor-boton{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.card{
+    margin: 0 10px;
+}
+
+.lista-fotos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.barra-superior{
+    min-width: cal(100% / 3);
+    
+}
+.img-sad{
+    margin: 2rem;
+    width: 50%;
+    border-radius: 50%;
+}
+
+.text-sad{
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    margin: 1rem;
+}
+.pantalla-vacia{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-subir{
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 5px;
+    background-color: rgb(247, 247, 168);
+  
+}
+
+.hidden{
+    display: none;
+}
+
+.btn-foto{
+    all: unset
+}
+
+.logo-btn{
+    width: 75px;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+main {
+    min-height: 100vh;
+   
+}
+header{
+    min-height: 10vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    min-height: 10vh;
+    justify-items: center;
+    align-items: center;
+    background-color: whitesmoke;
+    border-radius:0 0 10px 10px ;
+    border-bottom: #20201E 3px solid;
+
+}
+
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 10vh;
+    background-color: whitesmoke;
+    border-radius: 10px 10px 0 0 ;
+    border-top: #20201E 3px solid;
+}
+
+.header-footer-back{
+    background: rgb(140,140,140);
+    background: radial-gradient(circle, rgba(140,140,140,1) 62%, rgba(28,28,28,1) 97%);
+}
+
+.textura-fondo{
+    background-image: url('../images/fondo-l.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.scrollable-content::-webkit-scrollbar {
+    display: none;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: .6;
+    filter: alpha(opacity=60);
+    background-color: #025a02; /* Verde oscuro retro    */     
+    border: 0 solid transparent; /* Borde transparente */
+    border-radius: 20px; /* Bordes redondeados */
+    box-shadow: inset 0 0 10px 10px rgba(0, 0, 0, 10); /* Sombra difuminada hacia adentro */   
+    
+}
+
+
+.line {
+    position: fixed;
+    z-index: 1;
+    width: 1px;
+    height: 100%;
+    /*width: 100%;
+    height: 1px;*/
+    background-color: #000;
+    animation: flicker 0.1s infinite alternate;
+
+}
+.form-switch .form-check-input {
+    background-position: right center;
+    color:#910715;
+}
+
+.form-switch .form-check-input:checked {
+    background-position: right center;
+    background-color: #679C67;
+}
+
+.custom-switch{
+    transform: scale(1.5);
+}
+
+
+/*--------------------------------------------------------------------*/
+
+.arcade-button {
+    width: 60px; /* Adjust width and height for smaller size */
+    height: 60px; 
+    padding: 0; /* Remove padding */
+    font-size: 0; /* Hide text */
+    background-color: #8B0000; /* Dark red color */
+    border: none;
+    color: transparent; /* Hide text */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 50%;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5); /* Darker outer shadow */
+    position: relative; /* Required for inner shadow */
+    overflow: hidden; /* Required for inner shadow */
+    transition: all 0.3s ease-in-out;
+    border: 7px solid #470303; /* Border to resemble arcade button */
+  
+  }
+
+  .arcade-button:before, .arcade-button:after {
+    content: '';
+    position: absolute;
+    width: 77%;
+    height: 81%;
+    background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 80%);
+    left: 25%;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .arcade-button:after {
+    left: auto;
+    right: 25%;
+  }
+
+
+  .arcade-button:active {
+    background-color: #8B0000; /* Dark red color on click */
+    box-shadow: none; /* Remove outer shadow on click */
+    transform: translateY(4px); /* Slight down movement on click */
+  }
+
+  .background-btn-rojo{
+    background-color: #8B0000; /* Dark red color */
+    border: 7px solid #470303; /* Border to resemble arcade button */
+  
+}
+.background-btn-rojo:active{
+    
+    background-color: #8B0000; /* Dark red color on click */
+}
+
+/* Animación para el efecto de parpadeo */
+@keyframes flicker {
+    0% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0.8;
+    }
+}
+
+@media screen and (width <= 420px) {
+    .titulo-pip{
+        
+        font-size: 2rem;
+   }
+ 
+
+}
+
+@media screen and (width <= 767px) {
+    .titulo-pip{
+        font-size: 2rem;
+    }
+    .textura-fondo{
+        background-image: url('../images/fondo-s.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    .img-sad{
+        margin: 2rem;
+        width: 50%;
+        border-radius: 50%;
+    }
+    
+    .text-sad{
+        color: white;
+        text-align: center;
+        font-size: 1.4rem;
+        margin: 1rem;
+    }
+
+
+    
+}
+
+@media screen and (width >= 768px) {
+
+}
