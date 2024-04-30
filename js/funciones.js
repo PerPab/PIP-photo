@@ -71,7 +71,6 @@ function conexionAPI() {
                 document.getElementById('lista').innerHTML = PantallaVacia();
             }
         });
-
 }
 
 window.addEventListener('onload', setTimeout(() => {
