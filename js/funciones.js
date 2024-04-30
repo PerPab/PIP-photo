@@ -44,20 +44,6 @@ function PantallaVacia() {
     return plantilla;
 }
 
-/*function conexionAPI() {
-    fetch(URLapi)
-        .then((response) => response.json())
-        .then((data) => ListaImagenes.push(...data))
-        .then(() => {
-            if (ListaImagenes.length > 0) {
-                ListaImagenes.sort((imagen.fecha));
-                Renderizar();
-            } else {
-                document.getElementById('lista').innerHTML = PantallaVacia();
-            }
-        })
-
-}*/
 
 function QuitarFiltro() {
 
@@ -71,7 +57,6 @@ function QuitarFiltro() {
     document.getElementById('footer').classList.toggle('textura-fondo');
 }
 
-//window.addEventListener('onload', conexionAPI());
 
 function conexionAPI() {
     fetch(URLapi)
@@ -81,13 +66,13 @@ function conexionAPI() {
             if (ListaImagenes.length > 0) {
                 document.getElementById('contenedor-barra-id').style.display = 'none';
                 Renderizar();
+            } else {
+                document.getElementById('contenedor-barra-id').style.display = 'none';
+                document.getElementById('lista').innerHTML = PantallaVacia();
             }
         });
 
 }
-
-
-
 
 window.addEventListener('onload', setTimeout(() => {
     conexionAPI()
