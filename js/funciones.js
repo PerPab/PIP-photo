@@ -41,7 +41,7 @@ function PantallaVacia() {
     </div>
     `
 
-    return plantilla;
+    document.getElementById('lista').innerHTML = plantilla;
 }
 
 
@@ -67,8 +67,8 @@ function conexionAPI() {
                 document.getElementById('contenedor-barra-id').style.display = 'none';
                 Renderizar();
             } else {
-                document.getElementById('lista').innerHTML = PantallaVacia();
                 document.getElementById('contenedor-barra-id').style.display = 'none';
+                PantallaVacia();
             }
         });
 }
