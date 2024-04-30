@@ -67,8 +67,8 @@ function conexionAPI() {
                 document.getElementById('contenedor-barra-id').style.display = 'none';
                 Renderizar();
             } else {
-                document.getElementById('contenedor-barra-id').style.display = 'none';
                 document.getElementById('lista').innerHTML = PantallaVacia();
+                document.getElementById('contenedor-barra-id').style.display = 'none';
             }
         });
 }
