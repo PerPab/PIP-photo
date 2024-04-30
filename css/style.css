@@ -314,8 +314,8 @@ footer{
     .titulo-pip{
         
         font-size: 2rem;
-   }
- 
+}
+
 
 }
 
@@ -327,7 +327,6 @@ footer{
         background-image: url('../images/fondo-s.png');
         background-repeat: no-repeat;
         background-size: cover;
-
     }
 
     .img-sad{
@@ -341,10 +340,11 @@ footer{
         text-align: center;
         font-size: 1.4rem;
         margin: 1rem;
+    } 
+
+    .contenedor-barra{
+        transform: scale(0.5);
     }
-
-
-    
 }
 
 @media screen and (width >= 768px) {
