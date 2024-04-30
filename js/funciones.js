@@ -16,6 +16,16 @@ function CrearCard(dato) {
     return plantilla;
 }
 
+function LoadingBar() {
+    plantilla = `<p class="texto-barra">Cargando...</p>
+    <div id="div-loading" class="barra">
+        <div class="progreso">
+        </div>
+    </div>`
+
+    document.getElementById('contenedor-barra-id').innerHTML = plantilla;
+}
+
 function Renderizar() {
     let ListaCards = document.getElementById('lista');
     ListaImagenes.forEach((imagen) => {
@@ -62,11 +72,11 @@ function conexionAPI() {
         .then((response) => response.json())
         .then((data) => ListaImagenes.push(...data))
         .then(() => {
-            document.getElementById('contenedor-barra-id').style.display = 'none';
+            //document.getElementById('contenedor-barra-id').style.display = 'none';
             if (ListaImagenes.length > 0) {
                 Renderizar();
             } else {
-                document.getElementById('contenedor-barra-id').style.display = 'none';
+                //document.getElementById('contenedor-barra-id').style.display = 'none';
                 PantallaVacia();
             }
         });
