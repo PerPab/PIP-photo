@@ -67,14 +67,19 @@ function conexionAPI() {
             if (ListaImagenes.length > 0) {
                 Renderizar();
             } else {
-                //document.getElementById('contenedor-barra-id').style.display = 'none';
+                document.getElementById('contenedor-barra-id').style.display = 'none';
                 PantallaVacia();
             }
         });
 }
 
-window.addEventListener('onload', setTimeout(() => {
+/*window.addEventListener('onload', setTimeout(() => {
     conexionAPI()
-}, 2000));
+}, 2000));*/
+
+window.addEventListener('onload', conexionAPI());
+
+
+
 
 
