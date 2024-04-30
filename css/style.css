@@ -276,6 +276,7 @@ footer{
 
 .contenedor-barra{
     width: 25rem;
+    height: 100vh;
     margin: 0%;
     padding: 0;
     display: flex;
@@ -289,6 +290,10 @@ footer{
     font-size: 2rem;
     font-weight: bolder;
     color: whitesmoke;
+}
+
+.pantalla-vacia{
+    height: 100%;
 }
 
 @keyframes progress-animation {
@@ -344,7 +349,7 @@ footer{
 
     .contenedor-barra{
         transform: scale(0.7);
-        z-index: 1;
+    
         
     }
 }

@@ -37,7 +37,7 @@ function PantallaVacia() {
     let plantilla = `
     <div id="pantalla-vacia" class="m-0 p-0 pantalla-vacia">
         <img src="images/sad-boy.png" class="img-sad" alt="No photo">
-        <h5 class="text-sad" >No hay fotos en la galería</h5>
+        <h5 class="text-sad">No hay fotos en la galería</h5>
     </div>
     `
 
