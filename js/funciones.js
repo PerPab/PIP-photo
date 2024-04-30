@@ -73,11 +73,11 @@ function conexionAPI() {
         });
 }
 
-/*window.addEventListener('onload', setTimeout(() => {
+window.addEventListener('onload', setTimeout(() => {
     conexionAPI()
-}, 2000));*/
+}, 1500));
 
-window.addEventListener('onload', conexionAPI());
+//window.addEventListener('onload', conexionAPI());
 
 
 
