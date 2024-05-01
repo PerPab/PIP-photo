@@ -276,6 +276,7 @@ footer{
 }
 
 .contenedor-barra{
+    width: 600px;
     margin: 0;
     padding: 0;
     display: flex;
