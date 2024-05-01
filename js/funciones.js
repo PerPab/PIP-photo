@@ -26,6 +26,10 @@ function LoadingBar() {
     document.getElementById('contenedor-barra-id').innerHTML = plantilla;
 }
 
+function OcultarLoadingBar() {
+    document.getElementById('contenedor-barra-id').innerHTML = '';
+}
+
 function Renderizar() {
     let ListaCards = document.getElementById('lista');
     ListaImagenes.forEach((imagen) => {
@@ -68,20 +72,21 @@ function QuitarFiltro() {
 
 
 function conexionAPI() {
+
     fetch(URLapi)
         .then((response) => response.json())
         .then((data) => ListaImagenes.push(...data))
         .then(() => {
-            //document.getElementById('contenedor-barra-id').style.display = 'none';
             if (ListaImagenes.length > 0) {
+                OcultarLoadingBar();
                 Renderizar();
             } else {
-                //document.getElementById('contenedor-barra-id').style.display = 'none';
+                OcultarLoadingBar();
                 PantallaVacia();
             }
         });
 }
-
+LoadingBar();
 window.addEventListener('onload', setTimeout(() => {
     conexionAPI()
 }, 1000));

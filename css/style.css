@@ -276,8 +276,6 @@ footer{
 }
 
 .contenedor-barra{
-    width: 25rem;
-    height: 50vh;
     margin: 0;
     padding: 0;
     display: flex;
@@ -324,7 +322,7 @@ footer{
 
 .contenedor-barra{
     transform: scale(0.5);
-    height: 40vh;
+  
 
 }
 
@@ -355,7 +353,7 @@ footer{
 
     .contenedor-barra{
         transform: scale(0.7);
-        height: 40vh;
+   
     
         
     }
