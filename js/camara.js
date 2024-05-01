@@ -84,7 +84,8 @@ inputCamera.addEventListener("change", () => { //al apretar aceptar en el file s
             showCloseButton: true,
             preConfirm: (titulo) => { // al aceptar la ventana modal entra aca
                 objetoCreado = CrearObjeto(convertirImagenAbase64(), titulo); // se crea el objeto con la imagen y el titulo
-
+                LimpiarMain();
+                LoadingBar();
                 EnviarDatos(objetoCreado) // aca se envia el objeto con los datos a mockapi
             }
         });
