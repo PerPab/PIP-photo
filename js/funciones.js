@@ -22,7 +22,6 @@ function LoadingBar() {
         <div class="progreso">
         </div>
     </div>`
-
     document.getElementById('contenedor-barra-id').innerHTML = plantilla;
 }
 
@@ -37,7 +36,6 @@ function Renderizar() {
         div.innerHTML = CrearCard(imagen);
         if (ListaCards != null) {
             ListaCards.append(div);
-
         }
     })
 }
