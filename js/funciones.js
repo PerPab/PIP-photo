@@ -88,7 +88,7 @@ function conexionAPI() {
 }
 
 window.addEventListener('onload', setTimeout(() => {
-    conexionAPI()
+    conexionAPI();
 }, 1000));
 
 //window.addEventListener('onload', conexionAPI());
