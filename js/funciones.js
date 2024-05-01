@@ -71,17 +71,17 @@ function QuitarFiltro() {
 }
 
 
+LoadingBar();
 function conexionAPI() {
-
     fetch(URLapi)
         .then((response) => response.json())
         .then((data) => ListaImagenes.push(...data))
         .then(() => {
             if (ListaImagenes.length > 0) {
-
+                OcultarLoadingBar();
                 Renderizar();
             } else {
-
+                OcultarLoadingBar();
                 PantallaVacia();
             }
         });
