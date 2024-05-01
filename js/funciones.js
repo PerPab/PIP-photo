@@ -78,15 +78,15 @@ function conexionAPI() {
         .then((data) => ListaImagenes.push(...data))
         .then(() => {
             if (ListaImagenes.length > 0) {
-                OcultarLoadingBar();
+
                 Renderizar();
             } else {
-                OcultarLoadingBar();
+
                 PantallaVacia();
             }
         });
 }
-LoadingBar();
+
 window.addEventListener('onload', setTimeout(() => {
     conexionAPI()
 }, 1000));
