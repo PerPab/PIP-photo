@@ -50,7 +50,7 @@ function EnviarDatos(objeto) {
                 LimpiarMain(); // se eliminan los child del la lista de cards
                 ListaImagenes = []; // se limpia la lista de elementos
                 conexionAPI(); // vuelve a renderizar la lista en el main con los nuevos elementos
-                OcultarLoadingBar();
+
                 return response.json()
             } else {
                 Swal.fire({
@@ -84,7 +84,7 @@ inputCamera.addEventListener("change", () => { //al apretar aceptar en el file s
             showCloseButton: true,
             preConfirm: (titulo) => { // al aceptar la ventana modal entra aca
                 objetoCreado = CrearObjeto(convertirImagenAbase64(), titulo); // se crea el objeto con la imagen y el titulo
-                LoadingBar();
+
                 EnviarDatos(objetoCreado) // aca se envia el objeto con los datos a mockapi
             }
         });
